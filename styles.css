@@ -24,12 +24,13 @@ a {
 }
 
 nav {
-  width: 90%;
+  width: 95%;
   min-height: 10vh;
   margin: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .logo h1 {
@@ -52,7 +53,7 @@ nav {
 .collage {
   margin: auto;
   min-height: 90vh;
-  width: 90%;
+  width: 95%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto;
