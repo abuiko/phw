@@ -80,6 +80,7 @@ nav {
 }
 
 .details {
+  grid-column: 1/2;
   background-image: url("../Photo/details1.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -87,6 +88,7 @@ nav {
 }
 
 .people {
+  grid-column: 2/3;
   background-image: url("../Photo/main1.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -94,6 +96,7 @@ nav {
 }
 
 .nature {
+  grid-column: 3/4;
   background-image: url("../Photo/main2.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -102,9 +105,12 @@ nav {
 
 /* MOBILE VERSION */
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1040px) {
   .menu {
     display: none;
+  }
+  .logo h1 {
+    font-size: 1.2rem;
   }
 
   .collage {
@@ -118,6 +124,10 @@ nav {
     height: 20rem;
   }
   .photo h2 {
-    font-size: 2.1rem;
+    font-size: 1.9rem;
+  }
+  .icons img {
+    width: 1rem;
+    margin-left: 2rem;
   }
 }

@@ -128,6 +128,13 @@ nav {
   .menu {
     display: none;
   }
+  .logo h1 {
+    font-size: 1.2rem;
+  }
+  .icons img {
+    width: 1rem;
+    margin-left: 2rem;
+  }
 
   .gallery {
     width: 100%;
