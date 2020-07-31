@@ -142,6 +142,18 @@ button:hover {
   cursor: pointer;
 }
 
+footer {
+  width: 95%;
+  margin: auto;
+  min-height: 10vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.footer p {
+  font-size: 1.1rem;
+}
+
 @media screen and (max-width: 800px) {
   .menu {
     display: none;

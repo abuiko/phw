@@ -103,6 +103,18 @@ nav {
   background-size: cover;
 }
 
+footer {
+  width: 95%;
+  margin: auto;
+  min-height: 10vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.footer p {
+  font-size: 1.1rem;
+}
+
 /* MOBILE VERSION */
 
 @media screen and (max-width: 1040px) {
