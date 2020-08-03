@@ -53,76 +53,49 @@ nav {
 }
 
 /* MAIN PAGE */
+
 .collage {
-  margin: auto;
   width: 95%;
+  margin: auto;
   display: grid;
+  grid-template-columns: repeat(3, 1fr);
   min-height: 90vh;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  grid-gap: 1rem;
+  grid-gap: 2rem;
 }
+.details {
+  background-image: url("../full-image/detail-big3.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.people {
+  background-image: url("../full-image/urban-big2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.nature {
+  background-image: url("../full-image/nature-big6.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .photo {
-  overflow: hidden;
-}
-.photo img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: all 0.4s ease-out;
-  cursor: pointer;
-}
-.photo img:hover {
-  transform: scale(1.2);
-}
-
-/* .collage {
-  margin: auto;
-  min-height: 90vh;
-  width: 95%;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: auto;
-  grid-gap: 1rem;
-} */
-
-/* .photo {
   display: flex;
   justify-content: center;
   align-items: center;
-} */
+}
 
-/* .photo h2 {
+.photo h2 {
   padding: 1rem 5rem;
   background-color: white;
   opacity: 0.7;
   font-size: 3rem;
   letter-spacing: 0.3rem;
   font-weight: normal;
-} */
-
-/* .details {
-  grid-column: 1/2;
-  background-image: url("../Photo/details1.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
-
-.people {
-  grid-column: 2/3;
-  background-image: url("../Photo/main1.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.nature {
-  grid-column: 3/4;
-  background-image: url("../Photo/main2.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-} */
 
 footer {
   width: 95%;
@@ -138,29 +111,42 @@ footer {
 
 /* MOBILE VERSION */
 
-@media screen and (max-width: 1040px) {
-  .menu {
-    display: none;
-  }
+@media screen and (max-width: 1200px) {
   .logo h1 {
     font-size: 1.2rem;
   }
-
-  /* .collage {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-  } */
-
-  .photo {
+  .collage {
+    grid-gap: 1rem;
+  }
+  /* .photo {
     width: 100%;
     height: 20rem;
-  }
+  } */
   .photo h2 {
     font-size: 1.9rem;
   }
   .icons img {
     width: 1rem;
     margin-left: 2rem;
+  }
+}
+@media screen and (max-width: 905px) {
+  .menu {
+    display: none;
+  }
+  .collage {
+    width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 0rem;
+  }
+  .photo h2 {
+    padding: 1rem 3rem;
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 621px) {
+  .collage {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   }
 }
