@@ -59,7 +59,7 @@ nav {
   margin: auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  min-height: 90vh;
+  min-height: 80vh;
   grid-gap: 2rem;
 }
 .details {
